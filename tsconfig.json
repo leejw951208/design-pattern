@@ -1,0 +1,44 @@
+{
+    // Visit https://aka.ms/tsconfig to read more about this file
+    "compilerOptions": {
+        // File Layout
+        // "rootDir": "./src",
+        // "outDir": "./dist",
+
+        // Environment Settings
+        // See also https://aka.ms/tsconfig/module
+        "module": "nodenext", // 모듈 시스템을 Node.js 최신 방식으로 설정
+        "target": "esnext", // 컴파일된 자바스크립트의 버전을 최신 ECMAScript로 설정
+        "types": [], // 포함할 타입 선언 파일을 지정하지 않음
+        // For nodejs:
+        // "lib": ["esnext"],
+        // "types": ["node"],
+        // and npm install -D @types/node
+
+        // Other Outputs
+        "sourceMap": true, // 디버깅을 위한 소스맵 파일 생성
+        "declaration": true, // 타입 선언 파일(.d.ts) 생성
+        "declarationMap": true, // 선언 파일에 대한 소스맵 생성
+
+        // Stricter Typechecking Options
+        "noUncheckedIndexedAccess": true, // 인덱스 접근 시 undefined 가능성을 체크
+        "exactOptionalPropertyTypes": true, // 선택적 프로퍼티 타입을 정확히 체크
+
+        // Style Options
+        // "noImplicitReturns": true,
+        "noImplicitOverride": true, // 오버라이드 시 명시적 키워드 필요
+        // "noUnusedLocals": true,
+        // "noUnusedParameters": true,
+        // "noFallthroughCasesInSwitch": true,
+        // "noPropertyAccessFromIndexSignature": true,
+
+        // Recommended Options
+        "strict": true, // 엄격한 타입 검사 활성화
+        // "jsx": "react-jsx", // JSX 변환 방식을 React 최신 방식으로 설정
+        // "verbatimModuleSyntax": true, // 모듈 구문을 그대로 유지
+        "isolatedModules": true, // 각 파일을 독립적인 모듈로 처리
+        "noUncheckedSideEffectImports": true, // 부작용 없는 import만 허용
+        "moduleDetection": "force", // 모듈 감지를 강제로 활성화
+        "skipLibCheck": true // 라이브러리 타입 검사 건너뜀
+    }
+}
