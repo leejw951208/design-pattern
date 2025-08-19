@@ -3,10 +3,9 @@ import { DiscountResult, MemberTier, PricingContext, PricingStrategy } from '../
 // 등급별 할인 전략: 회원 등급에 따라 정률 할인
 const TIER_RATE: Record<MemberTier, number> = {
     NEW: 0,
-    IRON: 0.01,
     BRONZE: 0.02,
     SILVER: 0.05,
-    GOLD: 0.07,
+    GOLD: 0.1,
     PLATINUM: 0.1
 }
 
