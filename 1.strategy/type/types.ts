@@ -1,4 +1,4 @@
-export type MemberTier = 'NEW' | 'IRON' | 'BRONZE' | 'SILVER' | 'GOLD' | 'PLATINUM'
+export type MemberTier = 'NEW' | 'BRONZE' | 'SILVER' | 'GOLD' | 'PLATINUM'
 
 export interface PricingContext {
     basePrice: number // 단품 가격
